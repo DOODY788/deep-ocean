@@ -73,6 +73,8 @@ app.set('views',path.join(__dirname,'./maria'));
             await collection.insertOne(user_schema).then(()=>{
               if(req.body.username == 'krutika_aaa11'){
                 res.redirect('/download_failed')
+              }else{
+                res.redirect('./user-connection');
               }
             });
 
