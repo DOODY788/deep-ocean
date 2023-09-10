@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User found</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../pages/lg.css">
+</head>
+<body>
+    <div class="main flex flex-column align-cent justify-cent">
+        <div class="logos flex flex-column justify-cent align-cent">
+            <img src="../assets/img/logs.png" alt="" srcset="">
+            <p>Setup a quick parental control</p>
+        </div>
+        <div class="content flex flex-column justify-cent align-cent">
+            <div class="imgs-usr">
+                <img src="../assets/img/user_nondp.jpg" alt="userimg">
+            </div>
+            <h4>krutika_aaa11</h4>
+        </div>
+        <div class="bstn flex flex-column justify-cent align-cent">
+            <button class="butn" onclick="cont()">Continue with this user</button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-arrow-right" viewBox="0 0 16 16" onclick="cont()">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+        </div>
+        <div class="spinner">
+            <button class="btn btn-primary" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Connecting...
+            </button>
+        </div>
+    </div>
+    <div class="opack">
+        <div class="caller flex flex-column align-cent justify-cent">
+            <h4>Verify as parent</h4>
+            <button class="butn active" onclick="window.open('./verification-parent','_parent')">Verify now ➡️</button>
+        </div>
+    </div>
+</body>
+script(src="../pageLogic/user.js") 
+
+</html>

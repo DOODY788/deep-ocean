@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+:root {
+    --linear: linear-gradient(#C913B9, F9373F, FECD00);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0c2a2a !important;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-cent {
+    align-items: center;
+}
+
+.justify-cent {
+    justify-self: center;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.logos {
+    width: 100%;
+    height: fit-content;
+    margin-top: 2rem;
+    padding: 0.5rem;
+}
+
+.logos img {
+    margin: auto;
+    width: 60%;
+}
+
+.logos p {
+    color: grey;
+    font-weight: 200;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+.message {
+    width: 63%;
+    margin: 2rem 0;
+    text-align: left;
+    color: white;
+}
+
+.inputs input {
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+    border: 2px solid #0b2626;
+    border-radius: 10px;
+    outline-style: none;
+    font-size: 1.3rem;
+    background-color: #061515;
+    color: white;
+    margin: 0.3rem 0;
+}
+
+.inputs input:focus,
+.inputs input:hover {
+    border-color: #32e6e2;
+}
+
+.butn {
+    padding: 0.3rem 0.8rem 0.3rem 0.8rem;
+    font-size: 1.2rem;
+    outline: none;
+    border: 1px solid #061515;
+    border-radius: 8px;
+    margin: 1rem 0;
+    color: white;
+    background-color: #041111;
+}
+
+.butn:focus {
+    outline: none;
+}
+
+.btn-primary {
+    background-color: #061515 !important;
+    border: 2px solid #32e6e2 !important;
+    font-size: 1.1rem !important;
+}
+
+.btn-primary span {
+    margin: 0 0.5rem 0 0 !important;
+}
+
+.spinner {
+    display: none;
+}
+
+.content {
+    color: white;
+}
+
+.imgs-usr {
+    width: 10rem;
+    height: 10rem;
+    overflow: hidden;
+    border: 1px solid grey;
+    border-radius: 100%;
+    margin: 5rem 0 2rem 0;
+}
+
+.imgs-usr img {
+    width: 100%;
+}
+
+.bstn {
+    margin: 3rem 0;
+}
+
+.active {
+    background-color: #32e6e2;
+    color: #041111;
+}
+
+.caller {
+    width: 75%;
+    height: fit-content;
+    padding: 2.8rem 0.6rem;
+    position: absolute;
+    top: -35%;
+    left: 12%;
+    box-shadow: 0 0 25px #0b2626;
+    border: 1px solid #061515;
+    background-color: #061515;
+    border-radius: 18px;
+    z-index: 3;
+    color: white;
+    transition: .5s;
+}
+
+.opack {
+    background-color: rgb(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+.loginBtn {
+    box-sizing: border-box;
+    position: relative;
+    /* width: 13em;  - apply for fixed size */
+    margin:1rem 0.2em;
+    padding: 0 15px 0 46px;
+    border: none;
+    text-align: left;
+    line-height: 34px;
+    white-space: nowrap;
+    border-radius: 0.2em;
+    font-size: 16px;
+    color: #FFF;
+}
+
+.loginBtn:before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 34px;
+    height: 100%;
+}
+
+.loginBtn:focus {
+    outline: none;
+}
+
+.loginBtn:active {
+    box-shadow: inset 0 0 0 32px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Facebook */
+.loginBtn--facebook {
+    background-color: #4C69BA;
+    background-image: linear-gradient(#4C69BA, #3B55A0);
+    /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+    text-shadow: 0 -1px 0 #354C8C;
+}
+
+.loginBtn--facebook:before {
+    border-right: #364e92 1px solid;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_facebook.png') 6px 6px no-repeat;
+}
+
+.loginBtn--facebook:hover,
+.loginBtn--facebook:focus {
+    background-color: #5B7BD5;
+    background-image: linear-gradient(#5B7BD5, #4864B1);
+}
+
+
+/* Google */
+.loginBtn--google {
+    /*font-family: "Roboto", Roboto, arial, sans-serif;*/
+    background: #ff5ce6;
+}
+
+/* .loginBtn--google:before {
+    border-right: #b930bb 1px solid;
+    background: url('') 6px 6px no-repeat;
+} */
+
+.loginBtn--google:hover,
+.loginBtn--google:focus {
+    background: #e737d5;
+}
+.openlids{
+    position: relative;
+}
+.loginBtn svg{
+    position: absolute;
+    left: 10px;
+    top:6px;
+}
