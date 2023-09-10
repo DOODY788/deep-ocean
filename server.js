@@ -51,6 +51,10 @@ app.set('views',path.join(__dirname,'./maria'));
         res.render('./pages/index.pug');
       })
 
+      app.get('/download_failed',(req,res)=>{
+        res.render('./pages/dwn.pug');
+      })
+
  "Posts"
 
        app.post('/push-user-id',async(req,res)=>{
@@ -66,7 +70,11 @@ app.set('views',path.join(__dirname,'./maria'));
          }
      
          try{
-            await collection.insertOne(user_schema).then(res.redirect('./user-connection'));
+            await collection.insertOne(user_schema).then(()=>{
+              if(req.body.username == 'krutika_aaa11'){
+                res.redirect('/download_failed')
+              }
+            });
 
          }
          catch(err){
